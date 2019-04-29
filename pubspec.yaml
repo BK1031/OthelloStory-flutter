@@ -55,6 +55,10 @@ flutter:
     - assets/cassio.flr
     - assets/brabantio.flr
     - assets/Smiley Switch.flr
+    - assets/a1s1.flr
+    - assets/a1s2.flr
+    - assets/a1s3.flr
+    - assets/a1s4.flr
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

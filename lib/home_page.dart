@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
               onTap: () {
-                router.navigateTo(context, 'intro-page');
+                router.navigateTo(context, 'intro-page', transition: TransitionType.native);
               },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
               onTap: () {
-                router.navigateTo(context, '/scene-selection');
+                router.navigateTo(context, '/scene-selection', transition: TransitionType.native);
               },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
