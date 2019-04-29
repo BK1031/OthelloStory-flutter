@@ -1,4 +1,6 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
+import 'package:othello_story/main.dart';
 
 class SceneSelectionPage extends StatefulWidget {
   @override
@@ -30,6 +32,9 @@ class _SceneSelectionPageState extends State<SceneSelectionPage> {
             new Divider(color: Colors.blueGrey,),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
+              onTap: () {
+                router.navigateTo(context, 'intro-page', transition: TransitionType.native);
+              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),
@@ -49,6 +54,9 @@ class _SceneSelectionPageState extends State<SceneSelectionPage> {
             ),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
+              onTap: () {
+                router.navigateTo(context, '/act-one', transition: TransitionType.native);
+              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),
@@ -68,6 +76,9 @@ class _SceneSelectionPageState extends State<SceneSelectionPage> {
             ),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
+              onTap: () {
+                router.navigateTo(context, '/act-two', transition: TransitionType.native);
+              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),
@@ -87,6 +98,9 @@ class _SceneSelectionPageState extends State<SceneSelectionPage> {
             ),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
+              onTap: () {
+                router.navigateTo(context, '/act-three', transition: TransitionType.native);
+              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),
@@ -106,6 +120,9 @@ class _SceneSelectionPageState extends State<SceneSelectionPage> {
             ),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
+              onTap: () {
+                router.navigateTo(context, '/act-four', transition: TransitionType.native);
+              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),
@@ -125,6 +142,9 @@ class _SceneSelectionPageState extends State<SceneSelectionPage> {
             ),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
+              onTap: () {
+                router.navigateTo(context, '/act-five', transition: TransitionType.native);
+              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),

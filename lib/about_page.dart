@@ -3,12 +3,12 @@ import 'main.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fluro/fluro.dart';
 
-class HomePage extends StatefulWidget {
+class AboutPage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _AboutPageState createState() => _AboutPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _AboutPageState extends State<AboutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             new Text(
-              "Othello",
+              "About",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 40.0
@@ -33,9 +33,6 @@ class _HomePageState extends State<HomePage> {
             new Divider(color: Colors.blueGrey,),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
-              onTap: () {
-                router.navigateTo(context, '/intro-page', transition: TransitionType.native);
-              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),
@@ -44,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.all(16.0),
                   width: double.infinity,
                   child: new Text(
-                    "Start Reading",
+                    "This is a simple app for kids to be able to experience Othello. There are some animations to help kids better understand the story, as well as substitutions to make the story more kid-friendly.",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0
@@ -55,9 +52,6 @@ class _HomePageState extends State<HomePage> {
             ),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
-              onTap: () {
-                router.navigateTo(context, '/scene-selection', transition: TransitionType.native);
-              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),
@@ -66,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.all(16.0),
                   width: double.infinity,
                   child: new Text(
-                    "Scene Selection",
+                    "Bharat Kathi\nApp Development, Scripting",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0
@@ -77,9 +71,6 @@ class _HomePageState extends State<HomePage> {
             ),
             new Padding(padding: EdgeInsets.all(8.0),),
             new GestureDetector(
-              onTap: () {
-                router.navigateTo(context, '/about', transition: TransitionType.native);
-              },
               child: new Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
                 color: Color(0xFF2d3447),
@@ -88,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.all(16.0),
                   width: double.infinity,
                   child: new Text(
-                    "About",
+                    "Edmond Li\nStoryboarding/Design, Scripting",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0

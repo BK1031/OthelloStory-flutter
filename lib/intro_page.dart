@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:fluro/fluro.dart';
 import 'package:othello_story/main.dart';
+import 'package:othello_story/text.dart';
 
 class IntroPage extends StatefulWidget {
   @override
@@ -83,6 +84,18 @@ class _OthelloPageState extends State<OthelloPage> {
               animation: 'idle',
             ),
           ),
+          new Padding(padding: EdgeInsets.all(16.0),),
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: new Text(
+                  Texts.othello,
+                  textAlign: TextAlign.center,
+                  style: new TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0
+                  ),
+                ),
+          ),
         ],
       )
     );
@@ -112,6 +125,15 @@ class _DesdemonaPageState extends State<DesdemonaPage> {
               animation: 'idle',
             ),
           ),
+          new Padding(padding: EdgeInsets.all(16.0),),
+          new Text(
+                Texts.desdemona,
+                textAlign: TextAlign.center,
+                style: new TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0
+                ),
+              ),
         ],
       )
     );
@@ -141,6 +163,15 @@ class _BrabantioPageState extends State<BrabantioPage> {
               animation: 'idle',
             ),
           ),
+          new Padding(padding: EdgeInsets.all(16.0),),
+          new Text(
+                Texts.brabantio,
+                textAlign: TextAlign.center,
+                style: new TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0
+                ),
+              ),
         ],
       )
     );
@@ -170,6 +201,15 @@ class _IagoPageState extends State<IagoPage> {
               animation: 'idle',
             ),
           ),
+          new Padding(padding: EdgeInsets.all(16.0),),
+          new Text(
+                Texts.iago,
+                textAlign: TextAlign.center,
+                style: new TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0
+                ),
+              ),
         ],
       )
     );
@@ -199,6 +239,15 @@ class _CassioPageState extends State<CassioPage> {
               animation: 'idle',
             ),
           ),
+          new Padding(padding: EdgeInsets.all(16.0),),
+          new Text(
+                Texts.cassio,
+                textAlign: TextAlign.center,
+                style: new TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0
+                ),
+              ),
         ],
       )
     );

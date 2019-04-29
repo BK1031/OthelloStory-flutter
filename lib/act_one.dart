@@ -49,7 +49,7 @@ class _ActOnePageState extends State<ActOnePage> {
       appBar: new AppBar(
         backgroundColor: Color(0xFF2d3447),
         elevation: 0.0,
-        title: new Text("Swipe to see next →", style: TextStyle(color: Colors.white),)
+        title: new Text("Act I - Swipe to see next →", style: TextStyle(color: Colors.white),)
       ),
       floatingActionButton: new Visibility(
         visible: _visible,
